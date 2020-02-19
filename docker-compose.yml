@@ -1,0 +1,10 @@
+version: '3.5'
+services: 
+ rahuljaiswal:
+  image: dockerfileexample:v3
+  build: 
+   context: .
+   dockerfile: demo.dockerfile
+  container_name: rahuljaiswalcontainer11
+  ports:
+   - "8787:80"
